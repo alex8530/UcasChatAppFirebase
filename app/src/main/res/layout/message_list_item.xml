@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/root"
+    android:padding="10dp"
+    android:background="@color/senderColor"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:id="@+id/userReciverImageImageView"
+        android:src="@drawable/reciver"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/messageBodyTextView"
+        tools:text="This is the body of the message"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/userSenderImageImageView"
+        android:src="@drawable/sender"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
